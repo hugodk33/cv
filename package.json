@@ -2,7 +2,7 @@
   "name": "hugoogleport",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hugodk33.github.io/",
+  "homepage": "https://hugodk33.github.io/cv",
   "dependencies": {
     "@babel/core": "7.1.6",
     "@svgr/webpack": "2.4.1",
@@ -63,7 +63,9 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "sass": "sass --watch src/styles/scss:src/styles/css"
+    "sass": "sass --watch src/styles/scss:src/styles/css",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
